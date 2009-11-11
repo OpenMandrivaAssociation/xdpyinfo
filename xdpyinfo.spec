@@ -11,6 +11,14 @@ BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: libxext-devel >= 1.0.0
 BuildRequires: libxtst-devel >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: libxxf86vm-devel
+BuildRequires: libxxf86dga-devel
+BuildRequires: libxxf86misc-devel
+BuildRequires: libxi-devel
+BuildRequires: libxrender-devel
+BuildRequires: libxcomposite-devel
+BuildRequires: libxinerama-devel
+BuildRequires: libdmx-devel
 
 %description
 Xdpyinfo is a utility for displaying information about an X server. It is used
