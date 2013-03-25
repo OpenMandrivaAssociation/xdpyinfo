@@ -3,9 +3,8 @@ Version:	1.3.0
 Release:	%mkrel 1
 Summary:	Display information utility for X
 Group:		Development/X11
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 
 BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: libxext-devel >= 1.0.0
@@ -31,20 +30,16 @@ different types of screens and visuals that are available.
 %setup -q
 
 %build
+autoreconf -fi
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xdpyinfo
 %{_mandir}/man1/xdpyinfo.*
 
