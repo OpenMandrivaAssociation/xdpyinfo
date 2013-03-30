@@ -1,6 +1,6 @@
 Name:		xdpyinfo
 Version:	1.3.0
-Release:	%mkrel 1
+Release:	2
 Summary:	Display information utility for X
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -18,7 +18,6 @@ BuildRequires: libxrender-devel
 BuildRequires: libxcomposite-devel
 BuildRequires: libxinerama-devel
 BuildRequires: libdmx-devel
-BuildRequires: libxp-devel
 
 %description
 Xdpyinfo is a utility for displaying information about an X server. It is used
