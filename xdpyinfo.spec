@@ -6,18 +6,18 @@ Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: libxext-devel >= 1.0.0
-BuildRequires: libxtst-devel >= 1.0.1
+BuildRequires: pkgconfig(x11) >= 1.0.0
+BuildRequires: pkgconfig(xext) >= 1.0.0
+BuildRequires: pkgconfig(xtst) >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
-BuildRequires: libxxf86vm-devel
-BuildRequires: libxxf86dga-devel
-BuildRequires: libxxf86misc-devel
-BuildRequires: libxi-devel
-BuildRequires: libxrender-devel
-BuildRequires: libxcomposite-devel
-BuildRequires: libxinerama-devel
-BuildRequires: libdmx-devel
+BuildRequires: pkgconfig(xxf86vm)
+BuildRequires: pkgconfig(xxf86dga)
+BuildRequires: pkgconfig(xxf86misc)
+BuildRequires: pkgconfig(xi)
+BuildRequires: pkgconfig(xrender)
+BuildRequires: pkgconfig(xcomposite)
+BuildRequires: pkgconfig(xinerama)
+BuildRequires: pkgconfig(dmx)
 
 %description
 Xdpyinfo is a utility for displaying information about an X server. It is used
