@@ -13,6 +13,7 @@ BuildRequires: x11-util-macros >= 1.0.1
 BuildRequires: pkgconfig(xxf86vm)
 BuildRequires: pkgconfig(xxf86dga)
 BuildRequires: pkgconfig(xxf86misc)
+BuildRequires: pkgconfig(xfixes)
 BuildRequires: pkgconfig(xi)
 BuildRequires: pkgconfig(xrender)
 BuildRequires: pkgconfig(xcomposite)
