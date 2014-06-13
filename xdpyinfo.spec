@@ -1,6 +1,6 @@
 Name:		xdpyinfo
 Version:	1.3.1
-Release:	5
+Release:	6
 Summary:	Display information utility for X
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
