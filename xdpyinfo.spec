@@ -1,9 +1,9 @@
 Name:		xdpyinfo
-Version:	1.3.2
-Release:	5
+Version:	1.3.3
+Release:	1
 Summary:	Display information utility for X
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 
 BuildRequires: pkgconfig(x11) >= 1.0.0
@@ -27,7 +27,7 @@ parameters used in communicating between clients and the server, and the
 different types of screens and visuals that are available.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 autoreconf -fi
@@ -35,11 +35,11 @@ autoreconf -fi
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xdpyinfo
-%{_mandir}/man1/xdpyinfo.*
+%doc %{_mandir}/man1/xdpyinfo.*
